@@ -1,3 +1,9 @@
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
+console.log("✅ DB URL:", process.env.ATLASDB_URL); // <--- debug line
+
 const mongoose = require("mongoose")
 const initData = require("./data.js")
 const Listing = require("../Models/listing.js")
