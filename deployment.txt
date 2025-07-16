@@ -33,4 +33,6 @@ hume apne project git project main convert karne kain liye hume
   git ignore file kaa use hum un files ko ignore karne kain liye karte hain joh files hume
   project ko github pain push karte waqt nahi chahiye hoti hain.
 
-2.  
+2.  deployement ko successful karne kain liye hume 
+    environment variables ko add karenge
+    Atlas ko configure karenge 
