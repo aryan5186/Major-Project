@@ -25,7 +25,7 @@ async function main(){
 const initDB = async ()=>{
    await Listing.deleteMany({})
    //hume key ko access karna hain islye .data likha hain
-   initData.data=initData.data.map((obj)=>({...obj,owner: "68299771707e38ed3f77911e"}))
+   initData.data=initData.data.map((obj)=>({...obj,owner: "68763ee71e9f84cc917ecb45"}))
    await Listing.insertMany(initData.data)
 
    console.log("data was initalized")
