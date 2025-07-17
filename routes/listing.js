@@ -19,7 +19,7 @@ router
   .post(
     isLoggedIn, 
     // validateListing,
-    upload.single("image"),
+    upload.single("listing[image]"),
     validateListing,
     wrapAsync(listingController.createListing)
   )
