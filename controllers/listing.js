@@ -85,6 +85,10 @@ module.exports.showListing = async (req, res) => {
 
 
 module.exports.createListing=async (req, res, next) => {
+    console.log("==== Incoming POST /listings ====");
+    console.log("req.body:", req.body);
+    console.log("req.file:", req.file);
+    console.log("User:", req.user);
     let response=await geocodingClient.forwardGeocode({
       query: req.body.listing.location,
       limit: 1
