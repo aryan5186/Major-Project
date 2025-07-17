@@ -3,7 +3,8 @@ const Listing = require("../Models/listing")
 const { listingSchema } = require("../schema.js");
 
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding'); 
-const mapToken=process.env.MAP_TOKEN;
+const mapToken=process.env.MAP_TOKEN.trim();
+console.log("📦 MAPBOX TOKEN:", mapToken); 
 const geocodingClient=mbxGeocoding({accessToken: mapToken});
 
 
